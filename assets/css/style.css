@@ -1,0 +1,339 @@
+/*COLORS*/
+/*011126 = blue*/
+/*F0C449 = yellow*/
+/*E1C7A6 = light something*/
+/*6DC6E4 = light blue*/
+/*D4CEAC = pale green*/
+
+* {
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body, section {
+  height: 100%;
+}
+
+.header {
+    height: 100vh;
+    max-width: 100%;
+}
+
+.header-bg {
+    height: 100vh;
+    width: 100vw;
+    position: static;
+    object-fit: cover;
+}
+
+.logo-con {
+    background-color: rgba(1,17,38,0.85);
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #F0C449;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.header-logo {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #011126;
+    text-transform: uppercase;
+    color: white;
+    z-index: 99999;
+}
+
+.thumb {
+    width: 100px;
+}
+
+#navbar {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    border-radius: 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: #011126;
+    color: #011126;
+}
+
+.btn:hover {
+    background-color: #011126;
+}
+
+#portfolio {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #011126;
+    color: white; 
+    height: 100%;
+}
+
+h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.image {
+    width: 100%;
+}
+
+.image-cont {
+    height: 240px;
+    overflow: hidden;
+}
+
+.footer1 {
+    background-color: #011126;
+    color: white;
+}
+
+.footer1 .container {
+    float: left;
+}
+
+.footer2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.fab {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.fab:hover {
+    color: #3B5998;
+}
+
+.foo-img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+#foolinks {
+    text-decoration: none;
+    color: white;
+}
+
+#foolinks:hover {
+    text-decoration: underline;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
+}
+
+.image-cont:hover .overlay {
+    opacity: 0.8;
+}
+
+section {
+  overflow: scroll;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*mobile style*/
+@media only screen and (max-width: 400px) {
+    .logo-con {
+        background-color: rgba(1,17,38,0.85);
+        width: 75%;
+        font-size: 0.85em;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-logo {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    #warehouse {
+        width: 100%;
+    }
+    #ware-desc > h2, p {
+        text-align: center;
+    }
+    p {
+        font-size: 0.75em;
+    }
+    h2 {
+        padding-top: 20px;
+    }
+    h5 {
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    #home {
+        width: 100vw;
+        overflow: hidden;
+    }
+    #ware-desc {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .image-cont {
+    height: 200px;
+    overflow: hidden;
+    }
+    h6 {
+        margin-top: 30px;
+    }
+}
+
+/*tablet only*/
+@media only screen and (min-width: 1161px) and (max-width: 960px) {
+    #warehouse {
+        max-height: 100%;
+        position: relative;
+        top: 0%;
+        left: -25%;
+        overflow: hidden;
+    }
+    #ware-desc {
+        background-color: white;
+    }
+    h2 {
+        padding-top: 60px;
+    }
+    h5 {
+        padding-bottom: 60px;
+        margin: 0;
+    }
+    #home {
+        height: 540px;
+    }
+    .ware-desc {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    h6 {
+        margin-top: 50px;
+    }
+}
+
+/*desktop only*/
+@media only screen and (min-width: 1160px) {
+    #warehouse {
+        max-width: 100%;
+        position: relative;
+        top: -20%;
+        margin: 0;
+        padding: 0;
+    }
+    #company {
+        background-color: white;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    h2 {
+        padding-top: 50px;
+    }
+    h5 {
+        padding-bottom: 50px;
+        margin: 0;
+    }
+    .ware-desc {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 20px;
+    }
+    h6 {
+        margin-top: 80px;
+    }
+}
+
+
+.stick {
+  position:fixed;
+    top:0;
+    width:100%;
+    background-color: #011126;
+}
