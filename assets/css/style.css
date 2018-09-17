@@ -88,6 +88,7 @@ h2 {
     text-transform: uppercase;
     border-color: #011126;
     color: #011126;
+    margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -111,7 +112,10 @@ h5 {
 }
 
 .image {
+    height: 100%;
     width: 100%;
+    position: static;
+    object-fit: cover;
 }
 
 .image-cont {
@@ -229,7 +233,10 @@ section {
         margin: 0 auto;
     }
     #warehouse {
+        height: 100%;
         width: 100%;
+        position: static;
+        object-fit: cover;
     }
     #ware-desc > h2, p {
         text-align: center;
@@ -252,28 +259,34 @@ section {
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 30px;
+        min-height: 50vh;
     }
     .btn {
         display: block;
         margin: 0 auto;
     }
     .image-cont {
-    height: 200px;
-    overflow: hidden;
+        height: 200px;
+        overflow: hidden;
     }
     h6 {
         margin-top: 30px;
     }
+    .footer1 .container {
+        text-align: center;
+    }
+    #foot-right {
+        text-align: center;
+    }
 }
 
 /*tablet only*/
-@media only screen and (min-width: 1161px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
     #warehouse {
-        max-height: 100%;
-        position: relative;
-        top: 0%;
-        left: -25%;
-        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: static;
+        object-fit: cover;
     }
     #ware-desc {
         background-color: white;
@@ -291,20 +304,23 @@ section {
     .ware-desc {
         padding-left: 48px;
         padding-right: 48px;
+        min-height: 50vh;
     }
     h6 {
         margin-top: 50px;
     }
+    #foot-right {
+        text-align: right;
+    }
 }
 
 /*desktop only*/
-@media only screen and (min-width: 1160px) {
+@media only screen and (min-width: 961px) {
     #warehouse {
-        max-width: 100%;
-        position: relative;
-        top: -20%;
-        margin: 0;
-        padding: 0;
+        height: 100%;
+        width: 100%;
+        position: static;
+        object-fit: cover;
     }
     #company {
         background-color: white;
@@ -324,9 +340,13 @@ section {
         padding-left: 48px;
         padding-right: 48px;
         padding-top: 20px;
+        min-height: 50vh;
     }
     h6 {
         margin-top: 80px;
+    }
+    #foot-right {
+        text-align: right;
     }
 }
 
