@@ -27,6 +27,19 @@ html, body, section {
     object-fit: cover;
 }
 
+#heading {
+    height: 35vh;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+#heading-img {
+    width: 100%;
+    transform: translate(0%,15%);
+    position: relative;
+    top: -20%;
+}
+
 .logo-con {
     background-color: rgba(1,17,38,0.85);
     width: 600px;
@@ -93,6 +106,15 @@ h2 {
 
 .btn:hover {
     background-color: #011126;
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #011126;
+    color: white; 
+    height: 100%;
 }
 
 #portfolio {
@@ -206,11 +228,131 @@ section {
   overflow: scroll;
 }
 
+
+
+
+
+#article h6 {
+    color: #6DC6E4;
+    margin-top: 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#article p {
+
+}
+
+.thumb-post img {
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  max-height: 120px;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+
+
+
 .clear:after {
     content: "";
     clear: both;
     display: block;
 }
+
+
+
+
+
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+section.ok{
+  background-color: #F0C449;
+}
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #F0C449;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid #F0C449;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+
+
+
+
+
+
+
 
 /*mobile style*/
 @media only screen and (max-width: 400px) {
@@ -318,6 +460,7 @@ section {
 @media only screen and (min-width: 961px) {
     #warehouse {
         height: 100%;
+        min-height: 600px;
         width: 100%;
         position: static;
         object-fit: cover;
@@ -330,7 +473,7 @@ section {
         overflow: hidden;
     }
     h2 {
-        padding-top: 50px;
+        padding-top: 60px;
     }
     h5 {
         padding-bottom: 50px;
@@ -340,13 +483,22 @@ section {
         padding-left: 48px;
         padding-right: 48px;
         padding-top: 20px;
-        min-height: 50vh;
+        min-height: 600px;
     }
     h6 {
         margin-top: 80px;
     }
     #foot-right {
         text-align: right;
+    }
+    #company {
+        min-height: 670px;
+    }
+    #heading-img {
+    width: 100%;
+    transform: translate(0%,-15%);
+    position: relative;
+    top: -20%;
     }
 }
 

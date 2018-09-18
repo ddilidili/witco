@@ -1,0 +1,43 @@
+/*COLORS*/
+/*011126 = blue*/
+/*F0C449 = yellow*/
+/*E1C7A6 = light something*/
+/*6DC6E4 = light blue*/
+/*D4CEAC = pale green*/
+
+* {
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body, section {
+  height: 100%;
+}
+
+.navbar {
+    background-color: #011126;
+    text-transform: uppercase;
+    color: white;
+    z-index: 99999;
+}
+
+
+
+
+
+/*mobile style*/
+@media only screen and (max-width: 400px) {
+
+}
+
+
+/*tablet only*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/*desktop only*/
+@media only screen and (min-width: 961px) {
+	
+}

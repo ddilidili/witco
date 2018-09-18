@@ -37,13 +37,16 @@
 
 </head>
 <body>
+
+<a href="#one" class="scroll-down" address="true"></a>
+
 <section class="container-fluid px-0">
 
 	<div class="header">
 		<img class="header-bg img-fluid max-width" src="assets/images/header-5.jpg"> <!-- BG image -->
 		<div class="logo-con">
 			<img class="header-logo" src="assets/images/WITCO-06.png">
-			<h3>Construction & Development Corporation</h3>
+			<h3 id="subtitle">Construction & Development Corporation</h3>
 		</div>
 	</div>
 
@@ -58,10 +61,10 @@
 		<div class="collapse navbar-collapse pt-1" id="navbar-nav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item px-2">
-					<a class="nav-link" href="#home">Home</a>
+					<a class="nav-link active" href="#home">Home</a>
 				</li>					
 				<li class="nav-item px-2">
-					<a class="nav-link" href="#">Profile</a>
+					<a class="nav-link" href="profile.html">Profile</a>
 				</li>
 				<li class="nav-item px-2">
 					<a class="nav-link" href="#">Projects</a>
@@ -77,6 +80,8 @@
 
 	</nav>
 
+	<div id="one"></div>
+
 	<div id="company" class="content row">
 		<div id="home" class="container col-lg-8 col-md-6 col-sm-12 mx-0">
 			<img id="warehouse" src="assets/images/warehouse.jpg">
@@ -84,12 +89,12 @@
 		<div id="ware-desc" class="ware-desc container col-lg-4 col-md-6 col-sm-12">
 			<h2>OUR COMPANY</h2>
 			<p>WITCO  Construction  &  Development  Corporation  is  a  progeny  of  WITCO  Inspection  & Testing  Corporation  (formerly  Welding  Inspection  &  Testing  Corporation,  which  was  established  in  1991).  The  company's  main  business  revolves  around  the  expertise  of  its  Founder  &  President  Marcelo  B.  Villanueva  whose  qualifications  and  experiences  were  obtained  through  thirty  five  years  in  the  quality  assurance  and  steel  construction  industry.</p>
-			<a href="#" class="btn btn-outline-dark" role="button" aria-disabled="true">LEARN MORE</a>
+			<a href="profile.html" class="btn btn-outline-dark" role="button" aria-disabled="true">LEARN MORE</a>
 		</div>
 	</div>
 
 	<div class="row">
-		<div id="portfolio" class="container col-12" href="#">
+		<div id="portfolio" class="container col-12">
 			<h2>Our Portfolio</h2>
 			<h5>Experience our work</h5>
 		</div>
@@ -149,7 +154,7 @@
 			<img class="foo-img" src="assets/images/WITCO-06.png">
 			<small>
 				<a id="foolinks" href="#home">Home</a> | 
-				<a id="foolinks" href="#">Profile</a> | 
+				<a id="foolinks" href="profile.html">Profile</a> | 
 				<a id="foolinks" href="#">Projects</a> | 
 				<a id="foolinks" href="#">Careers</a> | 
 				<a id="foolinks" href="#">Contact</a>
@@ -166,6 +171,17 @@
 	</div>
 
 </section>
+
+
+<script type="text/javascript">
+	 $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
+</script>
+
 
 </body>
 </html>
