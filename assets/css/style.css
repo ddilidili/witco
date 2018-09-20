@@ -145,6 +145,9 @@ h5 {
     overflow: hidden;
 }
 
+.proj-img {}
+
+
 .footer1 {
     background-color: #011126;
     color: white;
@@ -182,6 +185,10 @@ h5 {
 
 h4 {
     margin-top: 10px;
+}
+
+ul {
+    list-style: none;
 }
 
 .row {
@@ -229,9 +236,6 @@ section {
 }
 
 
-
-
-
 #article h6 {
     color: #6DC6E4;
     margin-top: 0;
@@ -262,7 +266,9 @@ section {
     display: block;
 }
 
-
+.content1 {
+    height: 100vh;
+}
 
 
 
@@ -379,8 +385,28 @@ section.ok{
         width: 100%;
         position: static;
         object-fit: cover;
+        display: block;
     }
+    #warehouse1 {
+        height: 100%;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+    }1
     #ware-desc > h2, p {
+        text-align: center;
+    }
+    p {
+        font-size: 0.75em;
+    }
+    h2 {
+        padding-top: 20px;
+    }
+    h5 {
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    #ware-desc1 > h2, p {
         text-align: center;
     }
     p {
@@ -398,6 +424,15 @@ section.ok{
         overflow: hidden;
     }
     #ware-desc {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 30px;
+        /*min-height: 50vh;*/
+        box-sizing: border-box;
+        display: block;
+        height: 100%;
+    }
+    #ware-desc1 {
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 30px;
@@ -423,15 +458,22 @@ section.ok{
 }
 
 /*tablet only*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 1023px) {
     #warehouse {
         height: 100%;
         width: 100%;
         position: static;
         object-fit: cover;
     }
+    #warehouse1 {
+        min-height: 50vh;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+    }
     #ware-desc {
         background-color: white;
+        min-height: 50vh;
     }
     h2 {
         padding-top: 60px;
@@ -441,9 +483,14 @@ section.ok{
         margin: 0;
     }
     #home {
-        height: 540px;
+        height: 100%;
     }
     .ware-desc {
+        padding-left: 48px;
+        padding-right: 48px;
+        min-height: 50vh;
+    }
+    .ware-desc1 {
         padding-left: 48px;
         padding-right: 48px;
         min-height: 50vh;
@@ -457,17 +504,24 @@ section.ok{
 }
 
 /*desktop only*/
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1024px) {
     #warehouse {
         height: 100%;
-        min-height: 600px;
+        max-height: 90vh;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+    }
+    #warehouse1 {
+        height: 100%;
+        max-height: 100vh;
         width: 100%;
         position: static;
         object-fit: cover;
     }
     #company {
         background-color: white;
-        height: 500px;
+        height: 100vh;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -483,7 +537,13 @@ section.ok{
         padding-left: 48px;
         padding-right: 48px;
         padding-top: 20px;
-        min-height: 600px;
+        max-height: 350px;
+    }
+    .ware-desc1 {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 20px;
+        max-height: 100vh;
     }
     h6 {
         margin-top: 80px;
