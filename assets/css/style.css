@@ -165,22 +165,13 @@ h5 {
     background-color: rgba(0,0,0,0.85);
 }
 
-.fab {
-    font-size: 50px;
-    text-decoration: none;
-    color: white;
-}
-
-.fab:hover {
-    color: #3B5998;
-}
 
 .foo-img {
     width: 200px;
     display: block;
     margin: 0 auto;
-    padding-top: 60px;
-    margin-bottom: 40px;
+    padding-top: 15px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -253,10 +244,24 @@ section {
   max-height: 120px;
 }
 
-.carousel {
+.resp-container {
+    /*position: relative;*/
     overflow: hidden;
+    /*padding-top: 56.25%;*/
 }
 
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    border: 0;
+}
+
+#disclaimer {
+    font-size: 0.6em;
+}
 
 
 
@@ -266,9 +271,6 @@ section {
     display: block;
 }
 
-.content1 {
-    height: 100vh;
-}
 
 
 
@@ -383,8 +385,8 @@ section.ok{
     #warehouse {
         height: 100%;
         width: 100%;
-        position: static;
-        object-fit: cover;
+        /*position: static;*/
+        /*object-fit: cover;*/
         display: block;
     }
     #warehouse1 {
@@ -392,9 +394,6 @@ section.ok{
         width: 100%;
         position: static;
         object-fit: cover;
-    }1
-    #ware-desc > h2, p {
-        text-align: center;
     }
     p {
         font-size: 0.75em;
@@ -408,7 +407,7 @@ section.ok{
     }
     #ware-desc1 > h2, p {
         text-align: center;
-    }
+        }
     p {
         font-size: 0.75em;
     }
@@ -427,10 +426,8 @@ section.ok{
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 30px;
-        /*min-height: 50vh;*/
-        box-sizing: border-box;
-        display: block;
-        height: 100%;
+        min-height: 50vh;
+        text-align: left!important; 
     }
     #ware-desc1 {
         padding-left: 20px;
@@ -454,6 +451,10 @@ section.ok{
     }
     #foot-right {
         text-align: center;
+    }
+    #career-text {
+        text-align: center!important;
+        padding-x: 0!important;
     }
 }
 
@@ -501,6 +502,12 @@ section.ok{
     #foot-right {
         text-align: right;
     }
+    #temp-mt {
+        margin-top: 20px;
+    }
+    #temp-mb {
+        margin-bottom: 40px;
+    }
 }
 
 /*desktop only*/
@@ -537,7 +544,7 @@ section.ok{
         padding-left: 48px;
         padding-right: 48px;
         padding-top: 20px;
-        max-height: 350px;
+        min-height: 100vh;
     }
     .ware-desc1 {
         padding-left: 48px;
@@ -559,6 +566,9 @@ section.ok{
     transform: translate(0%,-15%);
     position: relative;
     top: -20%;
+    }
+    #temp-mb {
+        margin-bottom: 40px;
     }
 }
 
