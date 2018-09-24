@@ -358,7 +358,7 @@ section.ok{
 
 
 /*mobile style*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     .logo-con {
         background-color: rgba(1,17,38,0.85);
         width: 75%;
@@ -454,7 +454,7 @@ section.ok{
 }
 
 /*tablet only*/
-@media only screen and (min-width: 401px) and (max-width: 1023px) {
+@media only screen and (min-width: 421px) and (max-width: 1023px) {
     #warehouse {
         height: 100%;
         width: 100%;
