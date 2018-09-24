@@ -67,12 +67,6 @@ h2 {
     font-size: 3em;
 }
 
-.header-logo {
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-}
-
 .navbar {
     background-color: #011126;
     text-transform: uppercase;
@@ -570,6 +564,11 @@ section.ok{
     }
     #temp-mb {
         margin-bottom: 40px;
+    }
+    .header-logo {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
